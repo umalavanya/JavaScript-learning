@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📘 Complete JavaScript Tutorial · Modular Learning</title>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Master Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="dashboard">
+        <!-- LEFT SIDEBAR: MODULE TREE (All Topics Categorized) -->
+        <nav class="module-panel" id="moduleTree">
+            <h2><i class="fas fa-js" style="color:#f7b731;"></i> JavaScript Tutorial</h2>
+
+            <!-- Part 1: Basics -->
+            <div class="part">
+                <span class="part-name"><i class="fas fa-seedling"></i> BASICS</span>
+                <ul class="chap-list" id="basicsChaps">
+                    <li class="chap-item" data-chapter="roadmap"><i class="fas fa-map"></i> JavaScript - Roadmap</li>
+                    <li class="chap-item" data-chapter="features"><i class="fas fa-star"></i> JavaScript - Features</li>
+                    <li class="chap-item" data-chapter="enabling"><i class="fas fa-toggle-on"></i> JavaScript - Enabling
+                    </li>
+                    <li class="chap-item" data-chapter="syntax"><i class="fas fa-code"></i> JavaScript - Syntax</li>
+                    <li class="chap-item" data-chapter="helloworld"><i class="fas fa-hand-peace"></i> JavaScript - Hello
+                        World</li>
+                    <li class="chap-item" data-chapter="console"><i class="fas fa-terminal"></i> JavaScript -
+                        console.log()</li>
+                    <li class="chap-item" data-chapter="comments"><i class="fas fa-comment"></i> JavaScript - Comments
+                    </li>
+                    <li class="chap-item" data-chapter="variables"><i class="fas fa-box"></i> JavaScript - Variables
+                    </li>
+                    <li class="chap-item" data-chapter="let"><i class="fas fa-box-open"></i> JavaScript - let Statement
+                    </li>
+                    <li class="chap-item" data-chapter="constants"><i class="fas fa-lock"></i> JavaScript - Constants
+                    </li>
+                    <li class="chap-item" data-chapter="datatypes"><i class="fas fa-database"></i> JavaScript - Data
+                        Types</li>
+                    <li class="chap-item" data-chapter="typeconversions"><i class="fas fa-arrows-spin"></i> JavaScript -
+                        Type Conversions</li>
+                    <li class="chap-item" data-chapter="strictmode"><i class="fas fa-shield"></i> JavaScript - Strict
+                        Mode</li>
+                    <li class="chap-item" data-chapter="reserved"><i class="fas fa-key"></i> JavaScript - Reserved
+                        Keywords</li>
+                </ul>
+            </div>
+
+            <!-- Part 2: Operators -->
+            <div class="part">
+                <span class="part-name"><i class="fas fa-calculator"></i> OPERATORS</span>
+                <ul class="chap-list" id="operatorsChaps">
+                    <li class="chap-item" data-chapter="operators"><i class="fas fa-plus"></i> JavaScript - Operators
+                    </li>
+                    <li class="chap-item" data-chapter="arithmetic"><i class="fas fa-divide"></i> Arithmetic Operators
+                    </li>
+                    <li class="chap-item" data-chapter="comparison"><i class="fas fa-equals"></i> Comparison Operators
+                    </li>
+                    <li class="chap-item" data-chapter="logical"><i class="fas fa-brain"></i> Logical Operators</li>
+                    <li class="chap-item" data-chapter="bitwise"><i class="fas fa-microchip"></i> Bitwise Operators</li>
+                    <li class="chap-item" data-chapter="assignment"><i class="fas fa-pencil"></i> Assignment Operators
+                    </li>
+                    <li class="chap-item" data-chapter="conditional"><i class="fas fa-question"></i> Conditional
+                        Operators</li>
+                    <li class="chap-item" data-chapter="typeof"><i class="fas fa-info-circle"></i> typeof Operator</li>
+                    <li class="chap-item" data-chapter="nullish"><i class="fas fa-bolt"></i> Nullish Coalescing</li>
+                    <li class="chap-item" data-chapter="safeassign"><i class="fas fa-shield-halved"></i> Safe Assignment
+                    </li>
+                    <li class="chap-item" data-chapter="delete"><i class="fas fa-trash"></i> Delete Operator</li>
+                    <li class="chap-item" data-chapter="comma"><i class="fas fa-comma"></i> Comma Operator</li>
+                    <li class="chap-item" data-chapter="grouping"><i class="fas fa-parentheses"></i> Grouping Operator
+                    </li>
+                    <li class="chap-item" data-chapter="yield"><i class="fas fa-pause"></i> Yield Operator</li>
+                    <li class="chap-item" data-chapter="spread"><i class="fas fa-ellipsis"></i> Spread Operator</li>
+                    <li class="chap-item" data-chapter="exponentiation"><i class="fas fa-superscript"></i>
+                        Exponentiation</li>
+                    <li class="chap-item" data-chapter="precedence"><i class="fas fa-sort"></i> Operator Precedence</li>
+                </ul>
+            </div>
+
+            <!-- Part 3: Control Flow -->
+            <div class="part">
+                <span class="part-name"><i class="fas fa-diagram-project"></i> CONTROL FLOW</span>
+                <ul class="chap-list" id="controlChaps">
+                    <li class="chap-item" data-chapter="ifelse"><i class="fas fa-code-branch"></i> If...Else</li>
+                    <li class="chap-item" data-chapter="while"><i class="fas fa-rotate-left"></i> While Loop</li>
+                    <li class="chap-item" data-chapter="for"><i class="fas fa-rotate-right"></i> For Loop</li>
+                    <li class="chap-item" data-chapter="forin"><i class="fas fa-key"></i> For...in</li>
+                    <li class="chap-item" data-chapter="forof"><i class="fas fa-list"></i> For...of</li>
+                    <li class="chap-item" data-chapter="loopcontrol"><i class="fas fa-sliders"></i> Loop Control</li>
+                    <li class="chap-item" data-chapter="break"><i class="fas fa-stop"></i> Break Statement</li>
+                    <li class="chap-item" data-chapter="continue"><i class="fas fa-forward"></i> Continue Statement</li>
+                    <li class="chap-item" data-chapter="switch"><i class="fas fa-toggle-on"></i> Switch Case</li>
+                    <li class="chap-item" data-chapter="iterators"><i class="fas fa-iterator"></i> User Defined
+                        Iterators</li>
+                </ul>
+            </div>
+
+            <!-- Part 4: Functions -->
+            <div class="part">
+                <span class="part-name"><i class="fas fa-f"></i> FUNCTIONS</span>
+                <ul class="chap-list" id="functionsChaps">
+                    <li class="chap-item" data-chapter="functions"><i class="fas fa-f"></i> Functions</li>
+                    <li class="chap-item" data-chapter="functionexpressions"><i class="fas fa-equals"></i> Function
+                        Expressions</li>
+                    <li class="chap-item" data-chapter="functionparams"><i class="fas fa-sliders"></i> Function
+                        Parameters</li>
+                    <li class="chap-item" data-chapter="defaultparams"><i class="fas fa-preset"></i> Default Parameters
+                    </li>
+                    <li class="chap-item" data-chapter="functionconstructor"><i class="fas fa-cog"></i> Function()
+                        Constructor</li>
+                    <li class="chap-item" data-chapter="functionhoisting"><i class="fas fa-arrow-up"></i> Function
+                        Hoisting</li>
+                    <li class="chap-item" data-chapter="selfinvoking"><i class="fas fa-auto"></i> Self-Invoking
+                        Functions</li>
+                    <li class="chap-item" data-chapter="arrowfunctions"><i class="fas fa-arrow-right"></i> Arrow
+                        Functions</li>
+                    <li class="chap-item" data-chapter="invocation"><i class="fas fa-play"></i> Function Invocation</li>
+                    <li class="chap-item" data-chapter="call"><i class="fas fa-phone"></i> Function call()</li>
+                    <li class="chap-item" data-chapter="apply"><i class="fas fa-file"></i> Function apply()</li>
+                    <li class="chap-item" data-chapter="bind"><i class="fas fa-link"></i> Function bind()</li>
+                    <li class="chap-item" data-chapter="closures"><i class="fas fa-lock"></i> Closures</li>
+                    <li class="chap-item" data-chapter="variablescope"><i class="fas fa-globe"></i> Variable Scope</li>
+                    <li class="chap-item" data-chapter="globalvariables"><i class="fas fa-earth"></i> Global Variables
+                    </li>
+                    <li class="chap-item" data-chapter="smartparams"><i class="fas fa-brain"></i> Smart Function
+                        Parameters</li>
+                </ul>
+            </div>
+
+            <!-- Part 5: Objects & Built-ins -->
+            <div class="part">
+                <span class="part-name"><i class="fas fa-cubes"></i> OBJECTS & BUILT-INS</span>
+                <ul class="chap-list" id="objectsChaps">
+                    <li class="chap-item" data-chapter="number"><i class="fas fa-calculator"></i> Number</li>
+                    <li class="chap-item" data-chapter="boolean"><i class="fas fa-toggle-off"></i> Boolean</li>
+                    <li class="chap-item" data-chapter="strings"><i class="fas fa-font"></i> Strings</li>
+                    <li class="chap-item" data-chapter="arrays"><i class="fas fa-list"></i> Arrays</li>
+                    <li class="chap-item" data-chapter="date"><i class="fas fa-calendar"></i> Date</li>
+                    <li class="chap-item" data-chapter="dataview"><i class="fas fa-eye"></i> DataView</li>
+                    <li class="chap-item" data-chapter="handler"><i class="fas fa-hand"></i> Handler</li>
+                    <li class="chap-item" data-chapter="math"><i class="fas fa-square-root-variable"></i> Math</li>
+                    <li class="chap-item" data-chapter="regexp"><i class="fas fa-code"></i> RegExp</li>
+                    <li class="chap-item" data-chapter="symbol"><i class="fas fa-s"></i> Symbol</li>
+                    <li class="chap-item" data-chapter="sets"><i class="fas fa-layer-group"></i> Sets</li>
+                    <li class="chap-item" data-chapter="weakset"><i class="fas fa-ghost"></i> WeakSet</li>
+                    <li class="chap-item" data-chapter="maps"><i class="fas fa-map"></i> Maps</li>
+                    <li class="chap-item" data-chapter="weakmap"><i class="fas fa-map-pin"></i> WeakMap</li>
+                    <li class="chap-item" data-chapter="iterables"><i class="fas fa-rotate"></i> Iterables</li>
+                    <li class="chap-item" data-chapter="reflect"><i class="fas fa-mirror"></i> Reflect</li>
+                    <li class="chap-item" data-chapter="typedarray"><i class="fas fa-table"></i> TypedArray</li>
+                    <li class="chap-item" data-chapter="templateliterals"><i class="fas fa-code"></i> Template Literals
+                    </li>
+                    <li class="chap-item" data-chapter="taggedtemplates"><i class="fas fa-tag"></i> Tagged Templates
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Part 6: OOP -->
+            <div class="part">
+                <span class="part-name"><i class="fas fa-object-group"></i> OBJECT ORIENTED</span>
+                <ul class="chap-list" id="oopChaps">
+                    <li class="chap-item" data-chapter="objects"><i class="fas fa-cube"></i> Objects</li>
+                    <li class="chap-item" data-chapter="classes"><i class="fas fa-cubes"></i> Classes</li>
+                    <li class="chap-item" data-chapter="objectproperties"><i class="fas fa-gear"></i> Object Properties
+                    </li>
+                    <li class="chap-item" data-chapter="objectmethods"><i class="fas fa-method"></i> Object Methods</li>
+                    <li class="chap-item" data-chapter="staticmethods"><i class="fas fa-file-code"></i> Static Methods
+                    </li>
+                    <li class="chap-item" data-chapter="displayobjects"><i class="fas fa-display"></i> Display Objects
+                    </li>
+                    <li class="chap-item" data-chapter="objectaccessors"><i class="fas fa-door-open"></i> Object
+                        Accessors</li>
+                    <li class="chap-item" data-chapter="objectconstructors"><i class="fas fa-wrench"></i> Object
+                        Constructors</li>
+                    <li class="chap-item" data-chapter="nativeprototypes"><i class="fas fa-dna"></i> Native Prototypes
+                    </li>
+                    <li class="chap-item" data-chapter="es5objectmethods"><i class="fas fa-history"></i> ES5 Object
+                        Methods</li>
+                    <li class="chap-item" data-chapter="encapsulation"><i class="fas fa-shield"></i> Encapsulation</li>
+                    <li class="chap-item" data-chapter="inheritance"><i class="fas fa-family"></i> Inheritance</li>
+                    <li class="chap-item" data-chapter="abstraction"><i class="fas fa-cloud"></i> Abstraction</li>
+                    <li class="chap-item" data-chapter="polymorphism"><i class="fas fa-shapes"></i> Polymorphism</li>
+                </ul>
+            </div>
+
+            <!-- Part 7: Destructuring & Modern -->
+            <div class="part">
+                <span class="part-name"><i class="fas fa-code-branch"></i> MODERN JS</span>
+                <ul class="chap-list" id="modernChaps">
+                    <li class="chap-item" data-chapter="destructuring"><i class="fas fa-box-open"></i> Destructuring
+                    </li>
+                    <li class="chap-item" data-chapter="destructuringassignment"><i class="fas fa-pencil"></i>
+                        Destructuring Assignment</li>
+                    <li class="chap-item" data-chapter="objectdestructuring"><i class="fas fa-cube"></i> Object
+                        Destructuring</li>
+                    <li class="chap-item" data-chapter="arraydestructuring"><i class="fas fa-list"></i> Array
+                        Destructuring</li>
+                    <li class="chap-item" data-chapter="nesteddestructuring"><i class="fas fa-diagram-project"></i>
+                        Nested Destructuring</li>
+                    <li class="chap-item" data-chapter="optionalchaining"><i class="fas fa-link"></i> Optional Chaining
+                    </li>
+                    <li class="chap-item" data-chapter="globalobject"><i class="fas fa-globe"></i> Global Object</li>
+                    <li class="chap-item" data-chapter="mixins"><i class="fas fa-blender"></i> Mixins</li>
+                    <li class="chap-item" data-chapter="proxies"><i class="fas fa-shield"></i> Proxies</li>
+                </ul>
+            </div>
+
+            <!-- Part 8: JS Versions -->
+            <div class="part">
+                <span class="part-name"><i class="fas fa-clock"></i> VERSIONS</span>
+                <ul class="chap-list" id="versionsChaps">
+                    <li class="chap-item" data-chapter="history"><i class="fas fa-history"></i> History</li>
+                    <li class="chap-item" data-chapter="versions"><i class="fas fa-tag"></i> Versions</li>
+                    <li class="chap-item" data-chapter="es5"><i class="fas fa-5"></i> ES5</li>
+                    <li class="chap-item" data-chapter="es6"><i class="fas fa-6"></i> ES6</li>
+                    <li class="chap-item" data-chapter="es2016"><i class="fas fa-calendar"></i> ECMAScript 2016</li>
+                    <li class="chap-item" data-chapter="es2017"><i class="fas fa-calendar"></i> ECMAScript 2017</li>
+                    <li class="chap-item" data-chapter="es2018"><i class="fas fa-calendar"></i> ECMAScript 2018</li>
+                    <li class="chap-item" data-chapter="es2019"><i class="fas fa-calendar"></i> ECMAScript 2019</li>
+                    <li class="chap-item" data-chapter="es2020"><i class="fas fa-calendar"></i> ECMAScript 2020</li>
+                    <li class="chap-item" data-chapter="es2021"><i class="fas fa-calendar"></i> ECMAScript 2021</li>
+                    <li class="chap-item" data-chapter="es2022"><i class="fas fa-calendar"></i> ECMAScript 2022</li>
+                </ul>
+            </div>
+
+            <!-- Part 9: Asynchronous -->
+            <div class="part">
+                <span class="part-name"><i class="fas fa-clock"></i> ASYNCHRONOUS</span>
+                <ul class="chap-list" id="asyncChaps">
+                    <li class="chap-item" data-chapter="asynchronous"><i class="fas fa-hourglass"></i> Asynchronous</li>
+                    <li class="chap-item" data-chapter="callbackfunctions"><i class="fas fa-phone"></i> Callback
+                        Functions</li>
+                    <li class="chap-item" data-chapter="promises"><i class="fas fa-handshake"></i> Promises</li>
+                    <li class="chap-item" data-chapter="asyncawait"><i class="fas fa-code"></i> Async/Await</li>
+                    <li class="chap-item" data-chapter="microtasks"><i class="fas fa-tasks"></i> Microtasks</li>
+                    <li class="chap-item" data-chapter="promisification"><i class="fas fa-gear"></i> Promisification
+                    </li>
+                    <li class="chap-item" data-chapter="promiseschaining"><i class="fas fa-link"></i> Promises Chaining
+                    </li>
+                    <li class="chap-item" data-chapter="timingevents"><i class="fas fa-clock"></i> Timing Events</li>
+                    <li class="chap-item" data-chapter="settimeout"><i class="fas fa-hourglass-start"></i> setTimeout()
+                    </li>
+                    <li class="chap-item" data-chapter="setinterval"><i class="fas fa-hourglass-half"></i> setInterval()
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Part 10: Browser APIs -->
+            <div class="part">
+                <span class="part-name"><i class="fas fa-window-maximize"></i> BROWSER APIS</span>
+                <ul class="chap-list" id="browserChaps">
+                    <li class="chap-item" data-chapter="cookies"><i class="fas fa-cookie"></i> Cookies</li>
+                    <li class="chap-item" data-chapter="cookieattributes"><i class="fas fa-gear"></i> Cookie Attributes
+                    </li>
+                    <li class="chap-item" data-chapter="deletingcookies"><i class="fas fa-trash"></i> Deleting Cookies
+                    </li>
+                    <li class="chap-item" data-chapter="bom"><i class="fas fa-window"></i> Browser Object Model</li>
+                    <li class="chap-item" data-chapter="window"><i class="fas fa-window-maximize"></i> Window Object
+                    </li>
+                    <li class="chap-item" data-chapter="document"><i class="fas fa-file"></i> Document Object</li>
+                    <li class="chap-item" data-chapter="screen"><i class="fas fa-tv"></i> Screen Object</li>
+                    <li class="chap-item" data-chapter="history"><i class="fas fa-history"></i> History Object</li>
+                    <li class="chap-item" data-chapter="navigator"><i class="fas fa-compass"></i> Navigator Object</li>
+                    <li class="chap-item" data-chapter="location"><i class="fas fa-location-dot"></i> Location Object
+                    </li>
+                    <li class="chap-item" data-chapter="console"><i class="fas fa-terminal"></i> Console Object</li>
+                </ul>
+            </div>
+
+            <!-- Part 11: Web APIs -->
+            <div class="part">
+                <span class="part-name"><i class="fas fa-globe"></i> WEB APIS</span>
+                <ul class="chap-list" id="webapiChaps">
+                    <li class="chap-item" data-chapter="webapi"><i class="fas fa-api"></i> Web API</li>
+                    <li class="chap-item" data-chapter="historyapi"><i class="fas fa-history"></i> History API</li>
+                    <li class="chap-item" data-chapter="storageapi"><i class="fas fa-database"></i> Storage API</li>
+                    <li class="chap-item" data-chapter="formsapi"><i class="fas fa-wpforms"></i> Forms API</li>
+                    <li class="chap-item" data-chapter="workerapi"><i class="fas fa-cogs"></i> Worker API</li>
+                    <li class="chap-item" data-chapter="fetchapi"><i class="fas fa-download"></i> Fetch API</li>
+                    <li class="chap-item" data-chapter="geolocationapi"><i class="fas fa-location-dot"></i> Geolocation
+                        API</li>
+                </ul>
+            </div>
+
+            <!-- Part 12: Events -->
+            <div class="part">
+                <span class="part-name"><i class="fas fa-bolt"></i> EVENTS</span>
+                <ul class="chap-list" id="eventsChaps">
+                    <li class="chap-item" data-chapter="events"><i class="fas fa-bell"></i> Events</li>
+                    <li class="chap-item" data-chapter="domevents"><i class="fas fa-code"></i> DOM Events</li>
+                    <li class="chap-item" data-chapter="addeventlistener"><i class="fas fa-plus-circle"></i>
+                        addEventListener()</li>
+                    <li class="chap-item" data-chapter="mouseevents"><i class="fas fa-mouse"></i> Mouse Events</li>
+                    <li class="chap-item" data-chapter="keyboardevents"><i class="fas fa-keyboard"></i> Keyboard Events
+                    </li>
+                    <li class="chap-item" data-chapter="formevents"><i class="fas fa-wpforms"></i> Form Events</li>
+                    <li class="chap-item" data-chapter="windowevent"><i class="fas fa-window-maximize"></i>
+                        Window/Document Events</li>
+                    <li class="chap-item" data-chapter="eventdelegation"><i class="fas fa-sitemap"></i> Event Delegation
+                    </li>
+                    <li class="chap-item" data-chapter="eventbubbling"><i class="fas fa-arrow-up"></i> Event Bubbling
+                    </li>
+                    <li class="chap-item" data-chapter="eventcapturing"><i class="fas fa-arrow-down"></i> Event
+                        Capturing</li>
+                    <li class="chap-item" data-chapter="customevents"><i class="fas fa-pen"></i> Custom Events</li>
+                </ul>
+            </div>
+
+            <!-- Part 13: Error Handling -->
+            <div class="part">
+                <span class="part-name"><i class="fas fa-exclamation-triangle"></i> ERROR HANDLING</span>
+                <ul class="chap-list" id="errorChaps">
+                    <li class="chap-item" data-chapter="errorhandling"><i class="fas fa-exclamation-circle"></i> Error
+                        Handling</li>
+                    <li class="chap-item" data-chapter="trycatch"><i class="fas fa-hand"></i> try...catch</li>
+                    <li class="chap-item" data-chapter="debugging"><i class="fas fa-bug"></i> Debugging</li>
+                    <li class="chap-item" data-chapter="customerrors"><i class="fas fa-pen"></i> Custom Errors</li>
+                    <li class="chap-item" data-chapter="extendingerrors"><i class="fas fa-code-branch"></i> Extending
+                        Errors</li>
+                </ul>
+            </div>
+
+            <!-- Part 14: Important Keywords -->
+            <div class="part">
+                <span class="part-name"><i class="fas fa-key"></i> KEYWORDS</span>
+                <ul class="chap-list" id="keywordsChaps">
+                    <li class="chap-item" data-chapter="this"><i class="fas fa-hand-point-right"></i> this Keyword</li>
+                    <li class="chap-item" data-chapter="void"><i class="fas fa-empty"></i> void Keyword</li>
+                    <li class="chap-item" data-chapter="new"><i class="fas fa-plus"></i> new Keyword</li>
+                    <li class="chap-item" data-chapter="var"><i class="fas fa-code"></i> var Keyword</li>
+                </ul>
+            </div>
+
+            <!-- Part 15: HTML DOM -->
+            <div class="part">
+                <span class="part-name"><i class="fas fa-code"></i> HTML DOM</span>
+                <ul class="chap-list" id="domChaps">
+                    <li class="chap-item" data-chapter="htmldom"><i class="fas fa-file-code"></i> HTML DOM</li>
+                    <li class="chap-item" data-chapter="dommethods"><i class="fas fa-method"></i> DOM Methods &
+                        Properties</li>
+                    <li class="chap-item" data-chapter="domdocument"><i class="fas fa-file"></i> DOM Document</li>
+                    <li class="chap-item" data-chapter="domelements"><i class="fas fa-cube"></i> DOM Elements</li>
+                    <li class="chap-item" data-chapter="domattributes"><i class="fas fa-tags"></i> DOM Attributes</li>
+                    <li class="chap-item" data-chapter="domforms"><i class="fas fa-wpforms"></i> DOM Forms</li>
+                    <li class="chap-item" data-chapter="changinghtml"><i class="fas fa-pencil"></i> Changing HTML</li>
+                    <li class="chap-item" data-chapter="changingcss"><i class="fas fa-paint-brush"></i> Changing CSS
+                    </li>
+                    <li class="chap-item" data-chapter="domanimation"><i class="fas fa-film"></i> DOM Animation</li>
+                    <li class="chap-item" data-chapter="domnavigation"><i class="fas fa-sitemap"></i> DOM Navigation
+                    </li>
+                    <li class="chap-item" data-chapter="domcollections"><i class="fas fa-layer-group"></i> DOM
+                        Collections</li>
+                    <li class="chap-item" data-chapter="domnodelist"><i class="fas fa-list"></i> DOM NodeList</li>
+                    <li class="chap-item" data-chapter="domtokenlist"><i class="fas fa-token"></i> DOM DOMTokenList</li>
+                </ul>
+            </div>
+
+            <!-- Part 16: Advanced -->
+            <div class="part">
+                <span class="part-name"><i class="fas fa-rocket"></i> ADVANCED</span>
+                <ul class="chap-list" id="advancedChaps">
+                    <li class="chap-item" data-chapter="bubblesort"><i class="fas fa-sort"></i> Bubble Sort Algorithm
+                    </li>
+                    <li class="chap-item" data-chapter="circularreference"><i class="fas fa-circle-notch"></i> Circular
+                        Reference Error</li>
+                    <li class="chap-item" data-chapter="jest"><i class="fas fa-vial"></i> Code Testing with Jest</li>
+                    <li class="chap-item" data-chapter="cors"><i class="fas fa-globe"></i> CORS Handling</li>
+                    <li class="chap-item" data-chapter="dataanalysis"><i class="fas fa-chart-bar"></i> Data Analysis
+                    </li>
+                    <li class="chap-item" data-chapter="deadzone"><i class="fas fa-skull"></i> Dead Zone</li>
+                    <li class="chap-item" data-chapter="designpatterns"><i class="fas fa-pattern"></i> Design Patterns
+                    </li>
+                    <li class="chap-item" data-chapter="engine"><i class="fas fa-engine"></i> Engine and Runtime</li>
+                    <li class="chap-item" data-chapter="executioncontext"><i class="fas fa-play"></i> Execution Context
+                    </li>
+                    <li class="chap-item" data-chapter="functioncomposition"><i class="fas fa-compose"></i> Function
+                        Composition</li>
+                    <li class="chap-item" data-chapter="immutability"><i class="fas fa-lock"></i> Immutability</li>
+                    <li class="chap-item" data-chapter="kaboom"><i class="fas fa-gamepad"></i> Kaboom.js</li>
+                    <li class="chap-item" data-chapter="lexicalscope"><i class="fas fa-code"></i> Lexical Scope</li>
+                    <li class="chap-item" data-chapter="localstorage"><i class="fas fa-database"></i> Local Storage</li>
+                    <li class="chap-item" data-chapter="memoization"><i class="fas fa-brain"></i> Memoization</li>
+                    <li class="chap-item" data-chapter="minifying"><i class="fas fa-compress"></i> Minifying JS</li>
+                    <li class="chap-item" data-chapter="mutability"><i class="fas fa-exchange"></i> Mutability vs
+                        Immutability</li>
+                    <li class="chap-item" data-chapter="packagemanager"><i class="fas fa-box"></i> Package Manager</li>
+                    <li class="chap-item" data-chapter="parse"><i class="fas fa-code"></i> Parse S-Expressions</li>
+                    <li class="chap-item" data-chapter="prototypal"><i class="fas fa-dna"></i> Prototypal Inheritance
+                    </li>
+                    <li class="chap-item" data-chapter="reactivity"><i class="fas fa-bolt"></i> Reactivity</li>
+                    <li class="chap-item" data-chapter="require"><i class="fas fa-require"></i> Require Function</li>
+                    <li class="chap-item" data-chapter="selectionapi"><i class="fas fa-mouse-pointer"></i> Selection API
+                    </li>
+                    <li class="chap-item" data-chapter="sessionstorage"><i class="fas fa-clock"></i> Session Storage
+                    </li>
+                    <li class="chap-item" data-chapter="sqlcrud"><i class="fas fa-database"></i> SQL CRUD Operations
+                    </li>
+                    <li class="chap-item" data-chapter="superchargedsorts"><i class="fas fa-sort-amount-up"></i>
+                        Supercharged Sorts</li>
+                    <li class="chap-item" data-chapter="temporaldeadzone"><i class="fas fa-hourglass"></i> Temporal Dead
+                        Zone</li>
+                    <li class="chap-item" data-chapter="throttling"><i class="fas fa-tachometer-alt"></i> Throttling
+                    </li>
+                    <li class="chap-item" data-chapter="trpc"><i class="fas fa-network-wired"></i> TRPC Library</li>
+                    <li class="chap-item" data-chapter="truthy"><i class="fas fa-check-circle"></i> Truthy and Falsy
+                        Values</li>
+                    <li class="chap-item" data-chapter="uploadfiles"><i class="fas fa-upload"></i> Upload Files</li>
+                    <li class="chap-item" data-chapter="datecomparison"><i class="fas fa-calendar-check"></i> Date
+                        Comparison</li>
+                    <li class="chap-item" data-chapter="recursion"><i class="fas fa-rotate-left"></i> Recursion</li>
+                    <li class="chap-item" data-chapter="datastructures"><i class="fas fa-sitemap"></i> Data Structures
+                    </li>
+                    <li class="chap-item" data-chapter="base64"><i class="fas fa-image"></i> Base64 Encoding</li>
+                    <li class="chap-item" data-chapter="callback"><i class="fas fa-phone"></i> Callback Function</li>
+                    <li class="chap-item" data-chapter="currentdatetime"><i class="fas fa-clock"></i> Current Date/Time
+                    </li>
+                    <li class="chap-item" data-chapter="datevalidation"><i class="fas fa-check"></i> Date Validation
+                    </li>
+                    <li class="chap-item" data-chapter="filtermethod"><i class="fas fa-filter"></i> Filter Method</li>
+                    <li class="chap-item" data-chapter="generatingcolors"><i class="fas fa-palette"></i> Generating
+                        Colors</li>
+                    <li class="chap-item" data-chapter="httprequests"><i class="fas fa-globe"></i> HTTP Requests</li>
+                    <li class="chap-item" data-chapter="insertionsort"><i class="fas fa-sort"></i> Insertion Sort</li>
+                    <li class="chap-item" data-chapter="lazyloading"><i class="fas fa-hourglass"></i> Lazy Loading</li>
+                    <li class="chap-item" data-chapter="linkedlist"><i class="fas fa-link"></i> Linked List</li>
+                    <li class="chap-item" data-chapter="nestedloop"><i class="fas fa-diagram-project"></i> Nested Loop
+                    </li>
+                    <li class="chap-item" data-chapter="nullchecking"><i class="fas fa-question"></i> Null Checking</li>
+                    <li class="chap-item" data-chapter="currenturl"><i class="fas fa-link"></i> Get Current URL</li>
+                    <li class="chap-item" data-chapter="graphalgorithms"><i class="fas fa-project-diagram"></i> Graph
+                        Algorithms</li>
+                    <li class="chap-item" data-chapter="higherorderfunctions"><i class="fas fa-arrow-up"></i> Higher
+                        Order Functions</li>
+                    <li class="chap-item" data-chapter="emptystring"><i class="fas fa-ban"></i> Empty String Check</li>
+                    <li class="chap-item" data-chapter="formhandling"><i class="fas fa-wpforms"></i> Form Handling</li>
+                    <li class="chap-item" data-chapter="functionalprogramming"><i class="fas fa-code"></i> Functional
+                        Programming</li>
+                    <li class="chap-item" data-chapter="paramsvsargs"><i class="fas fa-sliders-h"></i> Parameters vs
+                        Arguments</li>
+                    <li class="chap-item" data-chapter="prototype"><i class="fas fa-dna"></i> Prototype</li>
+                    <li class="chap-item" data-chapter="reactiveprogramming"><i class="fas fa-bolt"></i> Reactive
+                        Programming</li>
+                    <li class="chap-item" data-chapter="reducemethod"><i class="fas fa-compress"></i> Reduce Method</li>
+                    <li class="chap-item" data-chapter="restoperator"><i class="fas fa-ellipsis-h"></i> Rest Operator
+                    </li>
+                    <li class="chap-item" data-chapter="shortcircuiting"><i class="fas fa-code-branch"></i> Short
+                        Circuiting</li>
+                    <li class="chap-item" data-chapter="undefinedcheck"><i class="fas fa-question-circle"></i> Undefined
+                        Check</li>
+                    <li class="chap-item" data-chapter="unittesting"><i class="fas fa-vial"></i> Unit Testing</li>
+                    <li class="chap-item" data-chapter="validateurl"><i class="fas fa-check-circle"></i> Validate URL
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Part 17: Miscellaneous -->
+            <div class="part">
+                <span class="part-name"><i class="fas fa-ellipsis-h"></i> MISCELLANEOUS</span>
+                <ul class="chap-list" id="miscChaps">
+                    <li class="chap-item" data-chapter="ajax"><i class="fas fa-sync"></i> Ajax</li>
+                    <li class="chap-item" data-chapter="asynciteration"><i class="fas fa-rotate"></i> Async Iteration
+                    </li>
+                    <li class="chap-item" data-chapter="atomics"><i class="fas fa-atom"></i> Atomics Objects</li>
+                    <li class="chap-item" data-chapter="restparameter"><i class="fas fa-ellipsis"></i> Rest Parameter
+                    </li>
+                    <li class="chap-item" data-chapter="pageredirect"><i class="fas fa-redirect"></i> Page Redirect</li>
+                    <li class="chap-item" data-chapter="dialogboxes"><i class="fas fa-window-maximize"></i> Dialog Boxes
+                    </li>
+                    <li class="chap-item" data-chapter="pageprinting"><i class="fas fa-print"></i> Page Printing</li>
+                    <li class="chap-item" data-chapter="validations"><i class="fas fa-check-double"></i> Validations
+                    </li>
+                    <li class="chap-item" data-chapter="animation"><i class="fas fa-film"></i> Animation</li>
+                    <li class="chap-item" data-chapter="multimedia"><i class="fas fa-video"></i> Multimedia</li>
+                    <li class="chap-item" data-chapter="imagemap"><i class="fas fa-image"></i> Image Map</li>
+                    <li class="chap-item" data-chapter="browsers"><i class="fas fa-globe"></i> Browsers</li>
+                    <li class="chap-item" data-chapter="json"><i class="fas fa-brackets-curly"></i> JSON</li>
+                    <li class="chap-item" data-chapter="multilinestrings"><i class="fas fa-paragraph"></i> Multiline
+                        Strings</li>
+                    <li class="chap-item" data-chapter="dateformats"><i class="fas fa-calendar"></i> Date Formats</li>
+                    <li class="chap-item" data-chapter="getdatemethods"><i class="fas fa-arrow-down"></i> Get Date
+                        Methods</li>
+                    <li class="chap-item" data-chapter="setdatemethods"><i class="fas fa-arrow-up"></i> Set Date Methods
+                    </li>
+                    <li class="chap-item" data-chapter="modules"><i class="fas fa-cubes"></i> Modules</li>
+                    <li class="chap-item" data-chapter="dynamicimports"><i class="fas fa-import"></i> Dynamic Imports
+                    </li>
+                    <li class="chap-item" data-chapter="bigint"><i class="fas fa-infinity"></i> BigInt</li>
+                    <li class="chap-item" data-chapter="blob"><i class="fas fa-file"></i> Blob</li>
+                    <li class="chap-item" data-chapter="unicode"><i class="fas fa-font"></i> Unicode</li>
+                    <li class="chap-item" data-chapter="shallowcopy"><i class="fas fa-copy"></i> Shallow Copy</li>
+                    <li class="chap-item" data-chapter="callstack"><i class="fas fa-stack"></i> Call Stack</li>
+                    <li class="chap-item" data-chapter="referencetype"><i class="fas fa-book"></i> Reference Type</li>
+                    <li class="chap-item" data-chapter="indexeddb"><i class="fas fa-database"></i> IndexedDB</li>
+                    <li class="chap-item" data-chapter="clickjacking"><i class="fas fa-shield"></i> Clickjacking Attack
+                    </li>
+                    <li class="chap-item" data-chapter="currying"><i class="fas fa-curry"></i> Currying</li>
+                    <li class="chap-item" data-chapter="graphics"><i class="fas fa-paint-brush"></i> Graphics</li>
+                    <li class="chap-item" data-chapter="canvas"><i class="fas fa-paint-brush"></i> Canvas</li>
+                    <li class="chap-item" data-chapter="debouncing"><i class="fas fa-bounce"></i> Debouncing</li>
+                    <li class="chap-item" data-chapter="performance"><i class="fas fa-tachometer-alt"></i> Performance
+                    </li>
+                    <li class="chap-item" data-chapter="styleguide"><i class="fas fa-pencil-ruler"></i> Style Guide</li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- MAIN RIGHT: dynamic chapter content -->
+        <main class="content-panel" id="mainContentArea">
+            <div class="topic-header">
+                <h1 id="mainTitle">JavaScript Tutorial</h1>
+                <span class="badge-module" id="chapterBadge">Getting Started</span>
+            </div>
+            <div id="chapterContent">
+                <!-- Welcome content loads by default -->
+                <div class="info-card">
+                    <i class="fas fa-js fa-2x" style="color:#f7b731;"></i>
+                    <h2>Welcome to the Complete JavaScript Tutorial</h2>
+                    <p>This modular learning platform contains over 250 JavaScript topics organized into 17 categories.
+                        Click any topic on the left to start learning.</p>
+                </div>
+                <div class="grid-cards">
+                    <div class="card">
+                        <h3><i class="fas fa-rocket"></i> Getting Started</h3>
+                        <p>New to JavaScript? Start with the Basics section to learn fundamentals.</p>
+                    </div>
+                    <div class="card">
+                        <h3><i class="fas fa-code-branch"></i> Practice Ready</h3>
+                        <p>Each topic includes concept notes, MCQ practice, coding problems, and interview Q&A.</p>
+                    </div>
+                    <div class="card">
+                        <h3><i class="fas fa-puzzle-piece"></i> Modular Design</h3>
+                        <p>Add new topics by creating files in the topics/ folder. The system automatically integrates
+                            them.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-scalable">
+                <i class="fas fa-expand-arrows-alt"></i> 250+ JavaScript topics · Add new modules anytime
+            </div>
+        </main>
+    </div>
+
+    <!-- Replace all individual script tags with just these two -->
+    <script src="script-loader.js"></script>
+    <!-- No need for app.js here - it's loaded by the loader -->
+    <!-- Always keep app.js last -->
+    <script src="app.js"></script>
+</body>
+
+</html>
