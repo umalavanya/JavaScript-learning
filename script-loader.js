@@ -9,6 +9,7 @@
         
         // Basics
         'topics/basics.js',
+        'topics/part1_basics/features.js',
         'topics/part1_basics/variables.js',
         'topics/datatypes.js',
         'topics/typeconversions.js',

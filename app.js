@@ -9,7 +9,7 @@
         part: "Getting Started",
         conceptNote: "Welcome to the Complete JavaScript Learning Platform. This modular tutorial contains over 250 topics organized into 17 categories.",
         importantPoints: [
-            "📚 Click any topic from the left sidebar to start learning",
+            "📚 Click any topic from the left sidebar to start learning.",
             "🔧 Each topic includes concept notes, MCQs, coding problems, and interview Q&A",
             "📝 Practice questions help reinforce learning",
             "🚀 New topics can be added by creating files in the topics/ folder",
